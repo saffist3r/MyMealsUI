@@ -1,13 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
+import 'react-native-gesture-handler';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, Alert, ToastAndroid } from 'react-native';
 
 export default function App() {
   return (
+    <NavigationContainer>
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Button
+        title="NEW MEAL"
+        onPress={() => ToastAndroid.show("Add new meal !", ToastAndroid.SHORT)}
+      />
+      <Button
+        title="MEALS"
+        onPress={() => ToastAndroid.show("List meals", ToastAndroid.SHORT)}
+      />
       <StatusBar style="auto" />
     </View>
+    </NavigationContainer>
   );
 }
 
