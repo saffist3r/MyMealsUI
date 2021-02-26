@@ -1,0 +1,12 @@
+{
+  "name": "MyMealsUI",
+  "displayName": "MyMealsUI",
+  "expo": {
+    "name": "MyMealsUI",
+    "slug": "MyMealsUI",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
